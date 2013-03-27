@@ -1,0 +1,172 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="PayPal.MST.Site.SiteMaster" %>
+<!DOCTYPE HTML>
+<!--[if lt IE 7 ]> <html lang="pt-BR" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="pt-BR" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="pt-BR" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="pt-BR" class="no-js ie9"> <![endif]-->
+<html lang="pt-BR" class="no-js">
+<head runat="server">
+    <meta charset="UTF-8">
+    <title>Movimento dos sem tablet</title>
+
+    <meta property="og:title"       content="Movimento dos sem tablet"/>
+    <meta property="og:url"         content="http://www.movimentodossemtablet.com.br/"/>
+    <meta property="og:image"       content="http://www.movimentodossemtablet.com.br/img/icone_fb_share.jpg"/>
+    <meta property="og:site_name"   content="Movimento dos sem tablet"/>
+    <meta property="og:description" content="Participe do Movimento dos Sem Tablet e lute junto com a gente para ter um tablet para chamar de seu!"             />
+
+    <meta http-equiv="Content-Style-Type"	content="text/css"																	/>
+	<meta http-equiv="Content-Language" 	content="pt-br" 																	/>
+	<meta http-equiv="pragma" 				content="no-cache"																	/>
+	<meta http-equiv="cache-control" 		content="no-cache"																	/>
+	<meta name="expires" 					content="0"																			/>
+	<meta name="robots" 					content="all" 																		/>
+	<meta name="robots" 					content="index,follow" 																/>
+	<meta name="title" 						content="Movimento dos sem tablet"													/>
+	<meta name="author" 					content="Tribo Interactive - http://www.tribointeractive.com.br"					/>
+	<meta name="description" 				content="Participe do Movimento dos Sem Tablet e lute junto com a gente para ter um tablet para chamar de seu!"     />
+	<meta name="keywords" 					content="tablet, movimento, causa, luta, touch screen, concurso, panico, band, viagem, nova york, cartaz, paypal"   />
+	<meta name="distribution" 				content="Global"		 															/>
+	<meta name="reply-to" 					content="tribo@tribointeractive.com.br"												/>
+
+    <link rel='image_src'                                                                   href='http://www.movimentodossemtablet.com.br/img/icone_fb_share.jpg'   />
+    <link rel="shortcut icon" 				type="image/ico" 								href="img/favicon.ico" 		        />
+
+    <script type="text/javascript" src="Scripts/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="Scripts/modernizr.js"></script>
+    <link href="Styles/Site.css" rel="stylesheet" type="text/css" />
+   
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server"> 
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    
+        <header role="banner">
+                <div>
+                <h1><a onclick="_gaq.push(['_trackEvent', 'Logo', 'Click', 'Header']);" href="Default.aspx">MOVIMENTO DOS SEM TABLET</a></h1>
+                    <h2><span class="asleft">"</span>Esse é um movimento para você que não tem um tablet e quer ter, e para você que tem um tablet, mas acha que mais gente deveria ter. Junte-se a nós e viva a esperança de que o sonhado touch screen logo estará ao alcance dos seus dedos.<span class="asright">"</span></h2>
+                    <nav>
+                        <ul>
+                            <!-- Quando estiver na Manifesto.aspx , inserir class active conforme linha abaixo -->
+                            <!--<li><a onclick="_gaq.push(['_trackEvent', 'Manifesto', 'Click', 'Header']);" href="Manifesto.aspx" class="bmanifesto active">Manifesto</a></li>-->
+                            <li>
+                            <a id="hlMenuManifesto" onclick="_gaq.push(['_trackEvent', 'Manifesto', 'Click', 'Header']);" href="Manifesto.aspx" class="bmanifesto" runat="server">Manifesto</a></li>
+                            <!-- Quando estiver na Depoimentos.aspx , inserir class active conforme linha abaixo -->
+                            <!--<li><a onclick="_gaq.push(['_trackEvent', 'Depoimentos', 'Click', 'Header']);" href="Depoimentos.aspx" class="bdepoimento active">Depoimentos</a></li>-->
+                            <li><a id="hlMenuDepoimentos" onclick="_gaq.push(['_trackEvent', 'Depoimentos', 'Click', 'Header']);" href="Depoimentos.aspx" class="bdepoimento" runat="server">Depoimentos</a></li>
+                            <!-- Quando estiver na ConcursoCultural.aspx, Preview.aspx e Cartaz.aspx , inserir class active conforme linha abaixo -->
+                            <!--<li><a onclick="_gaq.push(['_trackEvent', 'Concurso', 'Click', 'Header']);" href="ConcursoCultural.aspx" class="bconcurso active">Concurso Cultural</a></li>-->
+                            <li><a id="hlMenuConcurso" onclick="_gaq.push(['_trackEvent', 'Concurso', 'Click', 'Header']);" href="ConcursoCultural.aspx" class="bconcurso" runat="server">Concurso Cultural</a></li>
+                        </ul>
+                    </nav>
+                </div>
+        </header>
+        <div class="wrapper">
+        <section class="main" role="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </section>
+        </div>
+    
+        <div class="foo-wrapper">
+            <footer role="contentinfo">
+            <div class="foo_concurso">
+
+                <asp:Literal ID="litFooterForaConcurso" text="text" runat="server" >
+                    <h2 class="tconcurso">Sobre o concurso</h2>
+                    <p><em><strong>Quer concorrer a uma viagem para Nova York?</strong><br />
+                    Crie um cartaz para o nosso <strong>Movimento dos Sem Tablet</strong> e participe.</em></p>
+                    <p><a href="/ConcursoCultural.aspx" onclick="_gaq.push(['_trackEvent', 'Participar', 'Click', 'Footer']);" title="Participar do Movimento dos Sem Tablet">PARTICIPAR</a></p>
+                </asp:Literal>
+
+                <!-- Quando estiver dentro de concurso, abrir este footer imagem -->
+                <asp:Literal ID="litFooterConcurso" text="text" runat="server" >
+                    <h2 class="tdepoimentos">Depoimentos</h2>
+                    <p><em>"Sou um cara compulsivo. Olho para todos os lugares e vejo tablets.<br />
+                    Só não vejo o meu, porque não tenho. E isso me deixa louco."</em></p>
+                    <p class="ftaz"><em>
+                    <strong>J.A., 38 anos, metalúrgico</strong></em></p>
+                </asp:Literal>
+
+            </div>
+
+            <div class="foo_paypal">
+
+                <asp:Literal ID="litImagemNaoConcurso" text="text" runat="server" >
+                    <h2><img src="img/logo_paypal.png" /></h2>
+                    <ul>
+                        <li><a onclick="_gaq.push(['_trackEvent', 'Apoio-Movimento', 'Click', 'Footer']);" href="#modal_paypal" name="modal">Por que PayPal apoia este movimento</a></li>
+                        <li><a onclick="_gaq.push(['_trackEvent', 'Crie-Conta', 'Click', 'Footer']);" href="http://www.paypal.com.br" target="_blank">Crie sua conta</a></li>
+                    </ul>
+                    <h2 class="logopf"><a onclick="_gaq.push(['_trackEvent', 'Ponto-Frio', 'Click', 'Footer']);" href="http://www.pontofrio.com" target="_blank"><img src="img/logo-pontofrio.png" alt="pontofrio.com" /></a></h2>
+
+                    <address>Todos os direitos reservados ao movimento dos sem tablet 2012</address>
+                </asp:Literal>
+
+                <!-- Quando estiver dentro de concurso, abrir só essa imagem -->
+                <asp:Literal ID="litImagemConcurso" text="text" runat="server" >
+                    <img src="img/foo_ny.png" class="foo_ny" />
+                </asp:Literal>
+
+            </div>
+
+          </footer>
+
+       </div>
+       <div id="mask"></div> 
+       <div id="modal_paypal" class="window"> 
+        <a href="#" title="Clique para fechar" class="close">X</a>
+           <div class="h_modal">
+                <h2><img src="img/logo_paypal_modal.png"></h2>
+                <ul>
+                   <li><a onclick="_gaq.push(['_trackEvent', 'Crie-sua-Conta', 'Click', 'Modal-Header']);" href="http://www.paypal.com.br" target="_blank">Crie sua conta</a></li>
+                </ul>
+           </div>
+       
+            <div class="box_cont_modal">
+                <h2>Por que PayPal apoia esse Movimento?</h2>
+                <hr />
+                <p>PayPal é uma solução de pagamento digital.</p>                 <p>E, obviamente, não existiria sem a internet.</p>                <p>Para uma empresa que nasceu no meio digital, lutar pela inclusão de todos é uma                necessidade.</p>                 <p>Afinal, esta empresa definitivamente não quer que ninguém fique sem ver vídeo                de gatinho, sem entrar nas redes sociais ou que alguém não tenha a liberdade de                curtir o que quiser em qualquer lugar que estiver.</p>                <p>Por isso, PayPal apoia o Movimento dos Sem Tablet e espera que, em breve,                mais pessoas possam ter um tablet para chamar de seu e que assim o movimento                mude de nome e passe a se chamar A Revolução dos Com Tablet.</p>
+
+                <div class="destaque_modal">
+                    <p>Quer saber mais sobre PayPal? <a onclick="_gaq.push(['_trackEvent', 'Saiba-mais-sobre', 'Click', 'Modal-Content']);" href="http://www.paypal.com.br" target="_blank">Clique aqui.</a></p>
+                    <p>Crie sua conta agora. É grátis!</p>
+                    <p><a onclick="_gaq.push(['_trackEvent', 'Crie-sua-Conta', 'Click', 'Modal-Content']);" href="http://www.paypal.com.br" target="_blank" class="criesuaconta">Crie sua conta</a></p>
+                </div>
+            </div>
+        </div>
+
+       <script type="text/javascript">
+           $(document).ready(function () {
+               $('a[name=modal]').click(function (e) {
+                   e.preventDefault();
+                   var id = $(this).attr('href');
+                   var maskHeight = $(document).height();
+                   var maskWidth = $(window).width();
+
+                   $('#mask').css({ 'width': maskWidth, 'height': maskHeight });
+                   $('#mask').fadeIn(300);
+                   $('#mask').fadeTo("slow", 0.8);
+                   var winH = $(window).height();
+                   var winW = $(window).width();
+                   $(id).css('top', winH / 2 - $(id).height() / 2);
+                   $(id).css('left', winW / 2 - $(id).width() / 2);
+                   $(id).fadeIn(300);
+               });
+
+               $('.window .close').click(function (e) {
+                   e.preventDefault();
+                   $('#mask, .window').fadeOut(300);
+               });
+
+               $('#mask').click(function () {
+                   $(this).fadeOut(300);
+                   $('.window').fadeOut(300);
+               });
+           });  
+</script>
+
+ 
+    </form>
+</body>
+</html>

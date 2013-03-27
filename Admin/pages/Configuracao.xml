@@ -1,0 +1,8 @@
+<page title="" subTitle="Configurações" dataSource="Configuracao" visible="1" >
+	<fields>
+		<field name="Id" header="Id" form="0" list="0" />
+		<field name="Codigo" header="Codigo" form="1" list="1" />
+		<field name="Descricao" header="Descricao" form="1" list="1" />
+		<field name="Valor" header="Valor" form="1" list="1" />
+	</fields>
+</page>

@@ -1,0 +1,99 @@
+﻿
+/* body */
+body{margin: 20px 20px 20px 20px;font-family: Arial;font-size: 12px;background-repeat: repeat-x;}
+a{color: #000000;text-decoration: none;}
+
+/* master */
+#master{border: 5px solid gray;background-color: White;width: 80%;min-width: 800px;margin: auto;}
+#master .masterHeader{height: 90px;background-color: gainsboro;}
+#master .masterHeader .collors{float: right;margin: 65px 2px 0 0;}
+#master .masterHeader .collors input{border: 1px outset;width: 12px;height: 12px;}
+#master .masterHeader h1{font-size: 16px;float: left; margin: 2px 0 0 2px; color: white;}
+#master .masterHeader h2{font-size: 20px;font-weight: normal;color: Gray;float: left;margin: 35px 0 0 50px;}
+#master .info, .masterFooter{clear: both;height: 20px;background-color: Gray;}
+#master .info span{color: White;float: right; font-size: 11px; margin: 3px 3px 0 0;}
+#master .menu{margin: 1px 20px 0 1px; float: left;}
+#master .menu a{font-weight: bold;display: block;padding: 5px; width: 120px;background-color: Gray;border-bottom: 1px solid White;color: White;}
+#master .masterContent{}
+#master .menu a:hover{background-color: LightGrey;}
+#master .pageArea{float: left;}
+#master .pageArea {padding-right: 20px; padding-top: 10px;width:600px;}
+#master .pageArea a{color: #0083B9;text-decoration: underline;}
+#master .pageArea a:hover{color: orange;}
+#master .endSession{float: right;color:White;margin:2px 10px 0 0;}
+#master .idioma{margin-left:10px;}
+
+/*Login */
+.login{margin-top: 20px;width: 200px;font-weight: bold;color: Gray;height: 200px;}
+.login input[type=submit]{ display: block; margin-bottom: 10px; background-color: Gray;color: White;}
+.login input[type=text], input[type=password]{display: block;margin-bottom: 10px;width: 150px;}
+.loginMessage{font-weight: bold;text-align: center;color: Red;list-style-type: disc;}
+
+/* header */
+.divHeader .titulo{font: normal 30px tahoma;color: #0083B9;margin-bottom: 20px;display: block;}
+.divHeader .subTitulo{font: normal 20px tahoma;color: #0083B9;margin-bottom: 20px;display: block;}
+.linkParameter{margin-bottom: 20px;display: block;}
+
+/* filter */
+.divFilter{padding-bottom:10px}
+.divFilter input{margin-right: 10px;}
+.divFilter select{margin-right: 10px;}
+
+/* titles */
+.divListTitle{font: normal 12px tahoma;color: #0083B9;font-weight: bold;padding-bottom:5px;}
+.divFormTitle{font: normal 12px tahoma;color: #0083B9;font-weight: bold;padding-bottom:25px;}
+.divListTitle .left{float: left;}
+.divListTitle .right{font-weight: normal;float: right;}
+
+/* list */
+.divList{clear: right;margin-bottom: 20px;}
+.divList table{margin-top: 3px; background-color: White;width: 100%;margin-bottom: 3px;}
+.divList table td{ padding-left: 3px;padding-right: 3px;padding-top: 2px;padding-bottom: 2px;}
+.divList table tr{cursor: pointer;}
+.divList table tr.Header{background-color: Gray;font-weight: normal;}
+.divList table tr.Alternate{background-color: #FFFFFF;}
+.divList table tr.Selected{background-color: lightGrey;}
+.divList table tr.Over{background-color: lightGrey;}
+.divList table tr.Footer{}
+.divList table th{color: White;}
+.divList .select{width:1%; text-align:center;}
+.divList .fieldLink{text-align:center;}
+
+/* formulario */
+.divForm{margin-bottom: 20px;width: 600px;}
+.divForm .fieldTitle{color: #0083B9;padding: 10px 0 15px 0;clear: both;font-weight: bold;font-size: 12px;font-style: italic;}
+.divForm .field{clear: both;display: table;margin-top:1px;}
+.divForm .header{color: red;font-weight: bold;width: 150px;float: left;}
+.divForm .value{float: left;}
+.divForm input[type=text], textArea{width: 400px;}
+.divForm input[type=checkbox]{width: 15px;}
+.divForm .imageMini{width: 100px;margin-top: 5px;margin-bottom: 5px;border: solid 13px black;display: block;}
+.divForm select{margin-right:10px;}
+
+
+/* Adress */
+.ddlLetters{margin-right: 5px;}
+.btnZipCode{margin-left: 5px;}
+
+/* acoes */
+.divActions{height: 60px;}
+.divActions input{margin-right: 10px;}
+.divActions span{ display: block; margin-top: 10px;font-weight: bold;}
+.divActions li.success{color: #0083B9;}
+.divActions li.error{color: Red;}
+
+/* ordination */
+.ordinationList{height:200px;margin-bottom:20px;}
+.ordinationDivHeader span{color: #0083B9;display: block;background-color:White;margin-bottom: 10px;}
+.ordinationDivHeader .title{font: normal 20px tahoma;} 
+.ordinationDivHeader a{display:block;margin-bottom:10px;}
+
+.ordinationDivListBox{float:left}
+.ordinationDivButtons{float:left;margin:0 0 0 10px;}
+.ordinationDivButtons input{display:block;margin-bottom:5px;width:60px}
+.ordinationDivActions {clear:both;height: 80px;}
+.ordinationDivActions span{margin-top: 10px;display: block;}
+.ordinationDivActions li.error{color: Red;}
+.ordinationDivActions li.success{color: Red;}
+
+

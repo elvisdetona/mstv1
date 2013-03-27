@@ -1,0 +1,572 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Tribo.Common
+</name>
+</assembly>
+<members>
+<member name="M:Tribo.Common.Download.ExecutarDownload(System.String)">
+	<summary>
+ Executa odownload de um arquivo
+ </summary>
+	<param name="FullPath">Caminho físico do arquivo no servidor.</param>
+	<remarks></remarks>
+</member><member name="M:Tribo.Common.Arquivo.ITransformacao.Aplicar">
+	<summary>
+ Ao ser implementado, deverá executar a transformação a qual a classe implementadora se destina.
+ </summary>
+</member><member name="P:Tribo.Common.Arquivo.ITransformacao.ArquivoEntrada">
+	<summary>
+ Ao ser implementada, deverá permitir escrever ou ler o arquivo no qual será aplicada a transformação.
+ </summary>
+	<returns>Ao ser implementada, deverá retornar o arquivo no qual será aplicada a transformação.</returns>
+</member><member name="P:Tribo.Common.Arquivo.ITransformacao.SufixoArquivoSaida">
+	<summary>
+ Ao ser implementada, deverá permitir escrever ou ler o sufixo que deverá ser aplicado no nome do arquivo de saída gerado pela transformação do arquivo de entrada.
+ </summary>
+	<returns>Ao ser implementada, deverá retornar o sufixo que deverá ser aplicado no nome do arquivo de saída.</returns>
+</member><member name="P:Tribo.Common.Arquivo.ITransformacao.ArquivoSaida">
+	<summary>
+ Ao ser implementada, deverá permitir ler o arquivo de saída gerado pela transformação do arquivo de entrada.
+ </summary>
+	<returns>Ao ser implementada, deverá retornar o arquivo de saída.</returns>
+</member><member name="P:Tribo.Common.Arquivo.ITransformacao.Transformacao">
+	<summary>
+ Ao ser implementada, deverá permitir escrever ou ler a transformação que deverá ser aplicada no arquivo de saída.
+ </summary>
+	<returns>O objeto que aplicará alguma transformação no arquivo de saída.</returns>
+	<remarks>Serve para permitir o encadeamento de transformações.</remarks>
+</member><member name="T:Tribo.Common.Arquivo.ITransformacao">
+	<summary>
+ Interface comum a todos os componentes que aplicam transformações em arquivos.
+ </summary>
+</member><member name="M:Tribo.Common.DAO.MySqlFactory.#ctor">
+	<summary>
+ Inicializa uma nova instância de Tribo.Common.DAO.MySqlFactory
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Tribo.Common.DAO.MySqlFactory.GetCommand">
+	<summary>
+ Cria um objeto de comando para o banco de dados MySql.
+ </summary>
+	<returns>O objeto de comando do tipo MySqlCommand.</returns>
+</member><member name="M:Tribo.Common.DAO.MySqlFactory.GetConnection">
+	<summary>
+ Cria um objeto de conexão ao banco de dados MySql.
+ </summary>
+	<returns>O objeto de conexão do tipo MySqlConnection.</returns>
+</member><member name="M:Tribo.Common.DAO.MySqlFactory.GetParameter">
+	<summary>
+ Cria um parâmetro de comando do banco de dados MySql.
+ </summary>
+	<returns>O objeto de parâmetro do tipo MySqlParameter.</returns>
+</member><member name="P:Tribo.Common.Mail.ServicoEmail.Email">
+	<summary>
+ Lê ou escreve a mensagem de e-mail que será enviada.
+ </summary>
+	<returns>Mensagem de e-mail que será enviada.</returns>
+	<remarks>Esta property permite modificar diretamente o e-mail que será enviado para alterar características que os métodos desta classe não o fazem.</remarks>
+</member><member name="P:Tribo.Common.Mail.ServicoEmail.SMTP">
+	<summary>
+ Escreve o endereço do servidor SMTP.
+ </summary>
+	<value>String com o endereço do servidor de SMTP.</value>
+	<remarks>Não utilize esta propriedade caso deseje usar o valor configurado no web.config em (mailSettings)</remarks>
+</member><member name="M:Tribo.Common.Mail.ServicoEmail.#ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+	<summary>
+ Cria uma nova instância de ServicoEmail, com uma mensagem de email com From, To, Subject e Body inicializados.
+ </summary>
+	<param name="EnderecoDe">Edereço do remetente do e-mail.</param>
+	<param name="NomeDe">Nome do remetende do e-mail.</param>
+	<param name="Assunto">Assunto do e-mail.</param>
+	<param name="CaminhoTemplate">Caminho do arquivo com o template do email.</param>
+	<param name="Variaveis">Dicionario de variáveis e valores que serão usados nos replaces do template.</param>
+</member><member name="M:Tribo.Common.Mail.ServicoEmail.#ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String)">
+	<summary>
+ Cria uma nova instância de ServicoEmail, com uma mensagem de email com From, To, Subject e Body inicializados.
+ </summary>
+	<param name="EnderecoDe">Edereço do remetente do e-mail.</param>
+	<param name="NomeDe">Nome do remetende do e-mail.</param>
+	<param name="Assunto">Assunto do e-mail.</param>
+	<param name="CaminhoTemplate">Caminho do arquivo com o template do email.</param>
+	<param name="Variaveis">Dicionario de variáveis e valores que serão substituidas no template.</param>
+	<param name="EnderecosPara">Endereços de e-mail dos destinatários, separe utilizando ; caso for enviar para mais de um.</param>
+</member><member name="M:Tribo.Common.Mail.ServicoEmail.#ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.List{System.Net.Mail.MailAddress})">
+	<summary>
+ Cria uma nova instância de ServicoEmail, com uma mensagem de email com From, To, Subject e Body inicializados.
+ </summary>
+	<param name="EnderecoDe">Edereço do remetente do e-mail.</param>
+	<param name="NomeDe">Nome do remetende do e-mail.</param>
+	<param name="Assunto">Assunto do e-mail.</param>
+	<param name="CaminhoTemplate">Caminho do arquivo com o template do email.</param>
+	<param name="Variaveis">Dicionario de variáveis e valores que serão substituidas no template.</param>
+	<param name="EnderecosPara">Lista de Destinatários</param>
+	<remarks></remarks>
+</member><member name="M:Tribo.Common.Mail.ServicoEmail.Enviar">
+	<summary>
+ Envia a mensagem de e-mail.
+ </summary>
+</member><member name="M:Tribo.Common.Mail.ServicoEmail.Enviar(System.String,System.String)">
+	<summary>
+ Envia a mensagem de e-mail.
+ </summary>
+</member><member name="M:Tribo.Common.Mail.ServicoEmail.AdicionarAnexo(System.String)">
+	<summary>
+ Adiciona um novo anexo no e-mail a ser enviado.
+ </summary>
+	<param name="CaminhoArquivo">Caminho do arquivo que será enviado como anexo.</param>
+</member><member name="M:Tribo.Common.Mail.ServicoEmail.ObterCorpo(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+	<summary>
+ Obtem a string com o corpo do e-mail.
+ </summary>
+	<param name="CaminhoTemplate"></param>
+	<param name="Variaveis"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Tribo.Common.Pager.IPager.PageIndex">
+	<summary>
+ Ao ser implementada, deverá permitir ler ou escrever a página atual que o paginador deverá extrair/exibir os resultados.
+ </summary>
+	<returns>Ao ser implementada, deverá retornar a página atual do paginador.</returns>
+	<remarks>Poderá ser usada em conjunto com PageSize tanto para controlar o paginador na UI, quanto o método de acesso aos dados para buscar apenas a fatia de dados correspondente a página atual.</remarks>
+</member><member name="P:Tribo.Common.Pager.IPager.PageSize">
+	<summary>
+ Ao ser implementada, deverá permitir ler ou escrever o tamanho da página a ser extraída/exibida.
+ </summary>
+	<returns>Ao ser implementada, deverá retornar o tamanho da página (quantidade de resultados) que deverão ser exibidos/extraídos.</returns>
+	<remarks>Poderá ser usada em conjunto com PageIndex tanto para controlar o paginador na UI, quanto o método de acesso aos dados para buscar apenas a fatia de dados correspondente a página atual.</remarks>
+</member><member name="P:Tribo.Common.Pager.IPager.PageCount">
+	<summary>
+ Ao ser implementada, deverá permitir ler ou escrever a quantidade de páginas retornadas pela consulta.
+ </summary>
+	<returns>Ao ser implementada, deverá retornar a quantidade de páginas que a consulta gerar.</returns>
+	<remarks>Deverá ser usada em conjunto com PageSize e ResultCount.</remarks>
+</member><member name="P:Tribo.Common.Pager.IPager.ResultCount">
+	<summary>
+ Ao ser implementada, deverá permitir ler ou escrever a quantidade de resultados retornados pela consulta.
+ </summary>
+	<returns>Ao ser implementada, deverá retornar a quantidade de resultados retornados pela consulta.</returns>
+	<remarks>Pode ser utilizada para Auxiliar a PageCount a ser calculada, e também (principalmente) para aprimorar a UI exibindo a quantidade total de resultados encontrados.</remarks>
+</member><member name="P:Tribo.Common.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Tribo.Common.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Tribo.Common.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:Tribo.Common.DAO.IDbObjectFactory.GetConnection">
+	<summary>
+ Ao ser implementado, deverá retornar um objeto de conexão a uma fonte de dados. Ex: SqlConnection, OracleConnection, etc.
+ </summary>
+	<remarks>Ao ser implementado, deverá retornar um objeto que implemente a interface IDbConnection.</remarks>
+</member><member name="M:Tribo.Common.DAO.IDbObjectFactory.GetParameter">
+	<summary>
+ Ao ser implementado, deverá retornar um parâmetro de comando a uma fonte de dados. Ex: SqlParameter, OracleParameter, etc.
+ </summary>
+	<remarks>Ao ser implementado, deverá retornar um objeto que implemente a interface IDbDataParameter.</remarks>
+</member><member name="M:Tribo.Common.DAO.IDbObjectFactory.GetCommand">
+	<summary>
+ Ao ser implementado, deverá retornar um objeto de comando de uma fonte de dados. Ex: SqlCommand, OracleCommand, etc.
+ </summary>
+	<remarks>Ao ser implementado, deverá retornar um objeto que implemente a interface IDbCommand.</remarks>
+</member><member name="M:Tribo.Common.Arquivo.Imagem.Common.#ctor">
+	<summary>
+ Impede que sejam criadas instâncias desta classe, já que todos seus métodos são estáticos.
+ </summary>
+</member><member name="M:Tribo.Common.Arquivo.Imagem.Common.RetornaFormato(System.String)">
+	<summary>
+ Retorna o formato de uma imagem a partir da extensão do nome do seu arquivo.
+ </summary>
+	<param name="PathArquivo">Nome ou caminho completo do arquivo da imagem</param>
+	<returns>O formato deduzido a partir da extensão do arquivo da imagem.</returns>
+</member><member name="T:Tribo.Common.Arquivo.Imagem.Common">
+	<summary>
+ Contém operações comuns utilizadas em várias classes do namespace Arquivo.Imagem
+ </summary>
+</member><member name="M:Tribo.Common.Arquivo.Video.Thumbnail.Aplicar">
+	<summary>
+ Gera o thumbnail do vídeo.
+ </summary>
+</member><member name="P:Tribo.Common.Arquivo.Video.Thumbnail.Segundos">
+	<summary>
+ Le ou escreve o segundo no qual deverá ser capturado o thumbnail.
+ </summary>
+	<returns>O segundo no qual o thumbnail deverá ser capturado.</returns>
+</member><member name="P:Tribo.Common.Arquivo.Video.Thumbnail.ArquivoEntrada">
+	<summary>
+ Lê ou escrevr o arquivo de vídeo do qual será extraído o thumbnail
+ </summary>
+	<returns>O arquivo de vídeo do qual será extraído o thumbnail</returns>
+</member><member name="P:Tribo.Common.Arquivo.Video.Thumbnail.ArquivoSaida">
+	<summary>
+ Lê o arquivo que de thumbnail que foi gerado.
+ </summary>
+	<returns>O arquivo que de thumbnail que foi gerado.</returns>
+</member><member name="P:Tribo.Common.Arquivo.Video.Thumbnail.SufixoArquivoSaida">
+	<summary>
+ Lê ou escreve o sufixo que deve ser aplicado no arquivo de saída.
+ </summary>
+	<returns>O sufixo que deve ser aplicado no arquivo de saída.</returns>
+	<remarks>Deixe como null(Nothing) ou "" para não aplicar sufixo no nome do arquivo da saída. Caso já exista um arquivo com o mesmo nome ele será sobrescrito.</remarks>
+</member><member name="P:Tribo.Common.Arquivo.Video.Thumbnail.Transformacao">
+	<summary>
+ Lê ou escreve a transformação que deverá ser aplicada no arquivo de saída.
+ </summary>
+	<value>A transformação que deverá ser aplicada no arquivo de saída.</value>
+	<remarks>Você pode empilhar quantas transformações desejar, uma dentro da outra. Elas serão aplicadas em ordem, da mais externa para a mais interna.</remarks>
+</member><member name="T:Tribo.Common.Arquivo.Video.Thumbnail">
+	<summary>
+ Gera um thumbnail a partir de um vídeo.
+ </summary>
+</member><member name="M:Tribo.Common.DAO.OracleFactory.#ctor">
+	<summary>
+ Inicializa uma nova instância de Tribo.Common.DAO.OracleFactory
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Tribo.Common.DAO.OracleFactory.GetCommand">
+	<summary>
+ Cria um objeto de comando para o banco de dados Oracle.
+ </summary>
+	<returns>O objeto de comando do tipo OracleCommand.</returns>
+</member><member name="M:Tribo.Common.DAO.OracleFactory.GetConnection">
+	<summary>
+ Cria um objeto de conexão ao banco de dados Oracle.
+ </summary>
+	<returns>O objeto de conexão do tipo OracleConnection.</returns>
+</member><member name="M:Tribo.Common.DAO.OracleFactory.GetParameter">
+	<summary>
+ Cria um parâmetro de comando do banco de dados Oracle.
+ </summary>
+	<returns>O objeto de parâmetro do tipo OracleParameter.</returns>
+</member><member name="P:Tribo.Common.Arquivo.ServicoUpload.Arquivo">
+	<summary>
+ Escreve ou lê o arquivo recebido pelo controle de upload do Asp.Net, do qual o arquivo será extraído e salvo no servidor.
+ </summary>
+</member><member name="P:Tribo.Common.Arquivo.ServicoUpload.Transformacao">
+	<summary>
+ Lê a lista de transformações que o arquivo deverá receber após seu upload.
+ </summary>
+	<returns>Retorna a lista de transformações que o arquivo deverá receber após seu upload.</returns>
+	<remarks>Permite que o arquivo enviado ao servidor sofra transformações para se adequar ao padrões desejados.</remarks>
+</member><member name="M:Tribo.Common.Arquivo.ServicoUpload.#ctor(System.Web.HttpPostedFile)">
+	<summary>
+ Cria uma nova instância de Tribo.Common.Arquivo.ServicoUpload com o Arquivo inicializado.
+ </summary>
+	<param name="Arquivo">Arquivo recebido pelo controle de upload do Asp.Net, do qual o arquivo será extraído e salvo no servidor.</param>
+</member><member name="M:Tribo.Common.Arquivo.ServicoUpload.Salvar(System.String,System.Boolean)">
+	<summary>
+ Salva o arquivo atual utilizando o nome original enviado pelo usuário e aplica as transformações configuradas
+ </summary>
+	<param name="CaminhoDiretorio">Caminho físico da diretório no qual o arquivo deve ser salvo.</param>
+	<param name="Sobrescrever">Define se o arquivo deve ser sobrecrito caso já exista outro com o mesmo nome no diretório, caso esteja configurado para não sobrescrever, será criado um arquivo seguindo o padrão do windows, por ex: Arquivo.jpg, Arquivo(1).jpg, Arquivo(2).jpg</param>
+	<returns>Retorna uma referência ao arquivo salvo</returns>
+</member><member name="M:Tribo.Common.Arquivo.ServicoUpload.Salvar(System.String,System.Boolean,System.String)">
+	<summary>
+ Salva o arquivo atual utilizando o nome fornecido e aplica as transformações configuradas
+ </summary>
+	<param name="CaminhoDiretorio">Caminho físico da diretório no qual o arquivo deve ser salvo.</param>
+	<param name="Sobrescrever">Define se o arquivo deve ser sobrecrito caso já exista outro com o mesmo nome no diretório, caso esteja configurado para não sobrescrever, será criado um arquivo seguindo o padrão do windows, por ex: Arquivo.jpg, Arquivo(1).jpg, Arquivo(2).jpg</param>
+	<param name="NomeArquivo">Nome com o qual o arquivo deverá ser salvo</param>
+	<returns>Retorna uma referência ao arquivo salvo</returns>
+</member><member name="T:Tribo.Common.Arquivo.ServicoUpload">
+	<summary>
+ Oferece funcionalidades básicas de upload de arquivos
+ </summary>
+</member><member name="M:Tribo.Common.Utils.Validacao.ValidaCPF(System.String)">
+	<summary>
+ Algoritimo de Validação de CPF
+ </summary>
+	<param name="sourceCPF">CPF de Origem</param>
+	<returns></returns>
+</member><member name="M:Tribo.Common.Arquivo.Imagem.Redimensionamento.#ctor(System.Int32,System.Int32)">
+	<summary>
+ Cria uma nova instãncia de Tribo.Common.Arquivo.Imagem.Redimensionamento com os dados de Altura e Largura inicializados.
+ </summary>
+	<param name="Altura">Altura que a imagem deverá ter após o redimensionamento.</param>
+	<param name="Largura">Largura que a imagem deverá ter após o redimensionamento.</param>
+</member><member name="M:Tribo.Common.Arquivo.Imagem.Redimensionamento.#ctor(System.Int32,System.Int32,System.String)">
+	<summary>
+ Cria uma nova instãncia de Tribo.Common.Arquivo.Imagem.Redimensionamento com os dados de Altura, Largura e SufixoArquivoSaida inicializados.
+ </summary>
+	<param name="Altura">Altura que a imagem deverá ter após o redimensionamento.</param>
+	<param name="Largura">Largura que a imagem deverá ter após o redimensionamento.</param>
+	<param name="SufixoArquivoSaida">Sufixo que deverá ser aplicado no nome do arquivo de saída.</param>
+</member><member name="M:Tribo.Common.Arquivo.Imagem.Redimensionamento.Aplicar">
+	<summary>
+ Aplica o redimensionamento na imagem
+ </summary>
+</member><member name="P:Tribo.Common.Arquivo.Imagem.Redimensionamento.Altura">
+	<summary>
+ Escreve ou lê a altura que a imagem deverá ter após o redimensionamento.
+ </summary>
+	<value></value>
+	<returns>A altura que a imagem deverá ter após o redimensionamento.</returns>
+</member><member name="P:Tribo.Common.Arquivo.Imagem.Redimensionamento.Largura">
+	<summary>
+ Escreve ou lê a largura que a imagem deverá ter após o redimensionamento.
+ </summary>
+	<returns>A largura que a imagem deverá ter após o redimensionamento.</returns>
+</member><member name="P:Tribo.Common.Arquivo.Imagem.Redimensionamento.ArquivoEntrada">
+	<summary>
+ Escreve ou lê o arquivo da imagem que deverá ser redimensionada.
+ </summary>
+	<returns>Retorna o arquivo da imagem que deverá ser redimensionada.</returns>
+	<remarks>Deve ser definido para que se possa utilizar o método Aplicar().</remarks>
+</member><member name="P:Tribo.Common.Arquivo.Imagem.Redimensionamento.ArquivoSaida">
+	<summary>
+ Escreve ou lê o arquivo da imagem gerada a partir do redimensionamento da imagem original (ArquivoEntrada).
+ </summary>
+	<returns>Retorna o arquivo da imagem gerada a partir do redimensionamento da imagem original.</returns>
+</member><member name="P:Tribo.Common.Arquivo.Imagem.Redimensionamento.Transformacao">
+	<summary>
+ Escreve ou lê o objeto que aplicará uma transformação que o arquivo de saída deverá sofrer após o redimensionamento.
+ </summary>
+	<returns>Retorna o objeto que aplicará uma transformação no arquivo de saída.</returns>
+	<remarks>Você pode empilhar quantas transformações desejar, uma dentro da outra. Elas serão aplicadas em ordem, da maiz externa para a mais interna.</remarks>
+</member><member name="P:Tribo.Common.Arquivo.Imagem.Redimensionamento.SufixoArquivoSaida">
+	<summary>
+ Lê ou escreve o sufixo que deve ser aplicado no arquivo de saída.
+ </summary>
+	<returns>O sufixo que deve ser aplicado no arquivo de saída.</returns>
+	<remarks>Deixe como null(Nothing) ou "" para não aplicar sufixo no nome do arquivo da saída. Caso já exista um arquivo com o mesmo nome ele será sobrescrito.</remarks>
+</member><member name="T:Tribo.Common.Arquivo.Imagem.Redimensionamento">
+	<summary>
+ Permite redimensionar uma imagem.
+ </summary>
+</member><member name="P:Tribo.Common.DAO.DbFacade.ConnectionString">
+	<summary>
+ Lê ou escrever a connection string que será utilizada para conectar-se ao banco de dados.
+ </summary>
+	<returns>A connection string que será utilizada para conectar-se ao banco de dados.</returns>
+</member><member name="M:Tribo.Common.DAO.DbFacade.#ctor(System.String,Tribo.Common.DAO.IDbObjectFactory)">
+	<summary>
+ Cria uma nova instância de DbFacade.
+ </summary>
+	<param name="ConnectionString">Connection string que será utilizada para conectar-se ao banco de dados.</param>
+	<param name="Factory">Objeto que fornecerá os objetos de acesso ao banco</param>
+</member><member name="M:Tribo.Common.DAO.DbFacade.GetCommand(System.String)">
+	<summary>
+ Fornece um objeto com o comando a ser executado no banco de dados.
+ </summary>
+	<param name="CommandText">Query/procedure que será executada no banco de dados</param>
+	<returns>Objeto de comando</returns>
+</member><member name="M:Tribo.Common.DAO.DbFacade.GetCommand(System.String,System.Data.CommandType)">
+	<summary>
+ Fornece um objeto com o comando a ser executado no banco de dados, configurado para o tipo de query fornecida.
+ </summary>
+	<param name="CommandText">Query/procedure que será executada no banco de dados.</param>
+	<param name="Type">Tipo de query que será executada no banco de dados.</param>
+	<returns>Objeto de comando</returns>
+</member><member name="M:Tribo.Common.DAO.DbFacade.AddParameter(System.Data.IDbCommand,System.String,System.Object,System.Data.ParameterDirection)">
+	<summary>
+ Adiciona um parâmetro ao comando fornecido, já configurado com o tipo de dado fornecido como valor.
+ </summary>
+	<param name="Cmd">Comando no qual o parâmetro será adicionado.</param>
+	<param name="ParamName">Nome do parâmetro, ex: @Param1.</param>
+	<param name="ParamValue">Valor que será inserido no parâmetro.</param>
+</member><member name="M:Tribo.Common.DAO.DbFacade.ExecuteScalar(System.Data.IDbCommand)">
+	<summary>
+ Executa o comando fornecido no banco de dados e retorna o valor da 1 célula retornada.
+ </summary>
+	<param name="Cmd">O comando com a query que será executada no banco.</param>
+	<returns>Valor da primeira célula (LinhaxColuna) retornado do banco.</returns>
+</member><member name="M:Tribo.Common.DAO.DbFacade.WrapList(System.Collections.IList,System.Data.IDbCommand)">
+	<summary>
+ Executa o comando fornecido no banco de dados e preenche a lista fornecida com objetos populados com os dados retornados pela query.
+ </summary>
+	<param name="ListToFill">A lista que deverá ser preenchida, este objeto não pode ser nulo, e o tipo da propriedade 'Item' deve ser do tipo dos objetos que deverão ser instanciados para preencher a lista.</param>
+	<param name="Cmd">O comando com a query que será executada no banco.</param>
+	<remarks>Os campos selecionados na query precisam ter o mesmo nome das properties do objeto para que estas sejam preenchidas automaticamente. 
+ Em casos de objetos relacionados (properties de tipos não primitivos), utilize o formato NomeDaPropertyNoObjetoPrincipal::NomeDaPropertyDoObjetoRelacionado.
+ Você pode trazer quantos níveis de objetos relacionados quanto desejar. Ex: Aluno::Sala::Predio::Campus::Faculdade
+ </remarks>
+</member><member name="M:Tribo.Common.DAO.DbFacade.WrapObject(System.Type,System.Data.IDbCommand)">
+	<summary>
+ Executa o comando fornecido no banco de dados e retorna um objeto do tipo fornecido, com suas propriedes preenchidas com os dados retornados pela query.
+ </summary>
+	<param name="ObjType">Tipo do objeto que deverá ser instanciado.</param>
+	<param name="Cmd">O comando com a query que será executada no banco.</param>
+	<returns>Objeto do tipo passado no parâmetro ObjType.</returns>
+	<remarks>Os campos selecionados na query precisam ter o mesmo nome das properties do objeto para que estas sejam preenchidas automaticamente. 
+ Em casos de objetos relacionados (properties de tipos não primitivos), utilize o formato NomeDaPropertyNoObjetoPrincipal::NomeDaPropertyDoObjetoRelacionado.
+ Você pode trazer quantos níveis de objetos relacionados quanto desejar. Ex: Aluno::Sala::Predio::Campus::Faculdade
+ </remarks>
+</member><member name="M:Tribo.Common.DAO.DbFacade.ExecuteNonQuery(System.Data.IDbCommand)">
+	<summary>
+ Executa uma query no banco de dados e não retorna nenhum valor. Recomendado para comandos insert, update, e delete.
+ </summary>
+	<param name="Cmd">O comando com a query que será executada no banco.</param>
+</member><member name="P:Tribo.Common.DAO.DbFacade.DbObjectFactory">
+	<summary>
+ Lê ou escreve o objeto que gerará os objetos de acesso ao banco.
+ </summary>
+	<returns>O objeto que gerará os objetos de acesso ao banco.</returns>
+	<remarks>Alterando esta propriedade, é alterado o tipo de banco que será acessado.</remarks>
+</member><member name="M:Tribo.Common.DAO.DbFacade.WrapObject(System.Type,System.Data.IDataReader)">
+	<summary>
+ Embrulha os dados de um datareader em um objeto.
+ </summary>
+	<param name="ObjType">Tipo do objeto que deverá ser instanciado.</param>
+	<param name="Reader">DataReader com os dados a serem embrulhados.</param>
+	<returns>Um objeto do tipo fornecido no parâmetro ObjType com suas properties preenchidas com os dados do DataReader fornecido no parâmetro Reader.</returns>
+	<remarks>Os campos do DataReader precisam ter o mesmo nome das properties do objeto de retorno.</remarks>
+</member><member name="M:Tribo.Common.Arquivo.Imagem.Corte.#ctor(System.Int32,System.Int32)">
+	<summary>
+ Cria uma nova instãncia de Corte com os dados de Altura e Largura inicializados.
+ </summary>
+	<param name="Altura">Tamanho vertical do corte em pixels.</param>
+	<param name="Largura">Tamanho horizontal do corte em pixels.</param>
+</member><member name="M:Tribo.Common.Arquivo.Imagem.Corte.#ctor(System.Int32,System.Int32,System.String)">
+	<summary>
+ Cria uma nova instãncia de Corte com os dados de Altura, Largura e SufixoArquivoSaida inicializados.
+ </summary>
+	<param name="Altura">Tamanho vertical do corte em pixels.</param>
+	<param name="Largura">Tamanho horizontal do corte em pixels.</param>
+	<param name="SufixoArquivoSaida">Sufixo que deverá ser aplicado no nome do arquivo de saída.</param>
+</member><member name="M:Tribo.Common.Arquivo.Imagem.Corte.Aplicar">
+	<summary>
+ Aplica o corte na imagem
+ </summary>
+</member><member name="P:Tribo.Common.Arquivo.Imagem.Corte.AlinhamentoVertical">
+	<summary>
+ Escreve ou lê a o alinhamento vertical de onde o corte deverá ser feito.
+ </summary>
+	<returns>Retorna o alinhamento vertical de onde o corte deverá ser feito.</returns>
+	<remarks>Caso nenhum valor seja definido, o padrão é PosicaoVertical.Centralizada</remarks>
+</member><member name="P:Tribo.Common.Arquivo.Imagem.Corte.AlinhamentoHorizontal">
+	<summary>
+ Escreve ou lê a o alinhamento horizontal onde o corte deverá ser feito.
+ </summary>
+	<returns>Retorna o alinhamento horizontal onde o corte deverá ser feito.</returns>
+	<remarks>Caso nenhum valor seja definido, o padrão é PosicaoHorizontal.Centralizada.</remarks>
+</member><member name="P:Tribo.Common.Arquivo.Imagem.Corte.Altura">
+	<summary>
+ Escreve ou lê o tamanho vertical do corte.
+ </summary>
+	<returns>Retorna o tamanho vertical do corte.</returns>
+</member><member name="P:Tribo.Common.Arquivo.Imagem.Corte.Largura">
+	<summary>
+ Retorna ou lê o tamanho horizontal do corte.
+ </summary>
+	<returns>Retorna o tamanho horizontal do corte.</returns>
+</member><member name="P:Tribo.Common.Arquivo.Imagem.Corte.ArquivoEntrada">
+	<summary>
+ Escreve ou lê o arquivo da imagem que deverá ser cortada.
+ </summary>
+	<returns>Retorna o arquivo da imagem que deverá ser cortada.</returns>
+	<remarks>Deve ser definido para que se possa utilizar o método Aplicar().</remarks>
+</member><member name="P:Tribo.Common.Arquivo.Imagem.Corte.ArquivoSaida">
+	<summary>
+ Escreve ou lê o arquivo da imagem gerada a partir do corte da imagem original (ArquivoEntrada).
+ </summary>
+	<returns>Retorna o arquivo da imagem gerada a partir do corte da imagem original.</returns>
+</member><member name="P:Tribo.Common.Arquivo.Imagem.Corte.Transformacao">
+	<summary>
+ Escreve ou lê o objeto que aplicará uma transformação que o arquivo de saída deverá sofrer após o corte.
+ </summary>
+	<returns>Retorna o objeto que aplicará uma transformação n arquivo de saída.</returns>
+	<remarks>Você pode empilhar quantas transformações desejar, uma dentro da outra. Elas serão aplicadas em ordem, da mais externa para a mais interna.</remarks>
+</member><member name="P:Tribo.Common.Arquivo.Imagem.Corte.SufixoArquivoSaida">
+	<summary>
+ Lê ou escreve o sufixo que deve ser aplicado no arquivo de saída.
+ </summary>
+	<returns>O sufixo que deve ser aplicado no arquivo de saída.</returns>
+	<remarks>Deixe como null(Nothing) ou "" para não aplicar sufixo no nome do arquivo da saída. Caso já exista um arquivo com o mesmo nome ele será sobrescrito.</remarks>
+</member><member name="T:Tribo.Common.Arquivo.Imagem.Corte.PosicaoVertical">
+	<summary>
+ Possíveis alinhamentos verticais que nos quais o corte pode ser feito.
+ </summary>
+</member><member name="T:Tribo.Common.Arquivo.Imagem.Corte.PosicaoHorizontal">
+	<summary>
+ Possíveis alinhamentos horizontais que nos quais o corte pode ser feito.
+ </summary>
+</member><member name="T:Tribo.Common.Arquivo.Imagem.Corte">
+	<summary>
+ Permite cortar uma imagem em formato retangular.
+ </summary>
+</member><member name="M:Tribo.Common.Arquivo.Common.#ctor">
+	<summary>
+ Impede que sejam criadas instâncias desta classe, já que todos seus métodos são estáticos.
+ </summary>
+</member><member name="M:Tribo.Common.Arquivo.Common.AplicarSufixo(System.String,System.String)">
+	<summary>
+ Aplica um sufixo em um nome de arquivo (antes da extensão), Ex: para 'Arquivo.txt', ao aplicar o sufixo '_Alterado', resultaria em 'Arquivo_Alterado.txt'
+ </summary>
+	<param name="PathArquivo">Nome ou caminho completo do arquivo no qual será aplicado o sufixo.</param>
+	<param name="Sufixo">Sufixo que deverá ser aplicado no nome do arquivo.</param>
+	<returns>O Nome com o sufixo aplicado.</returns>
+</member><member name="T:Tribo.Common.Arquivo.Common">
+	<summary>
+ Contém operações comuns utilizadas em várias classes do namespace Arquivo.
+ </summary>
+</member><member name="M:Tribo.Common.Arquivo.Video.Conversao.Aplicar">
+	<summary>
+ Aplica a conversão no vídeo
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Tribo.Common.Arquivo.Video.Conversao.NovoFormato">
+	<summary>
+ Escreve ou lê o formato para o qual o vídeo deverá ser convertido.
+ </summary>
+	<returns>Retorna o formato para o qual o vídeo deverá ser convertido.</returns>
+	<remarks>Caso não seja definido nenhum valor, o padrão é FormatoVideo.fla</remarks>
+</member><member name="P:Tribo.Common.Arquivo.Video.Conversao.ArquivoEntrada">
+	<summary>
+ Lê ou escreve o arquivo de vídeo que será convertido
+ </summary>
+	<returns>O arquivo de vídeo que será convertido</returns>
+</member><member name="P:Tribo.Common.Arquivo.Video.Conversao.ArquivoSaida">
+	<summary>
+ Lê o arquivo de vídeo que foi gerado após a conversão.
+ </summary>
+	<returns>O arquivo de vídeo que foi gerado após a conversão.</returns>
+</member><member name="P:Tribo.Common.Arquivo.Video.Conversao.SufixoArquivoSaida">
+	<summary>
+ Lê ou escreve o sufixo que deve ser aplicado no arquivo de saída.
+ </summary>
+	<returns>O sufixo que deve ser aplicado no arquivo de saída.</returns>
+	<remarks>Deixe como null(Nothing) ou "" para não aplicar sufixo no nome do arquivo da saída. Caso já exista um arquivo com o mesmo nome ele será sobrescrito.</remarks>
+</member><member name="P:Tribo.Common.Arquivo.Video.Conversao.Transformacao">
+	<summary>
+ Lê ou escreve a transformação que deverá ser aplicada no arquivo de saída.
+ </summary>
+	<value>A transformação que deverá ser aplicada no arquivo de saída.</value>
+	<remarks>Você pode empilhar quantas transformações desejar, uma dentro da outra. Elas serão aplicadas em ordem, da mais externa para a mais interna.</remarks>
+</member><member name="T:Tribo.Common.Arquivo.Video.Conversao.FormatoVideo">
+	<summary>
+ Formatos de vídeo para os quais a conversão pode ser feita.
+ </summary>
+</member><member name="T:Tribo.Common.Arquivo.Video.Conversao">
+	<summary>
+ Converte um vídeo para um novo formato.
+ </summary>
+</member><member name="M:Tribo.Common.DAO.SqlServerFactory.#ctor">
+	<summary>
+ Inicializa uma nova instância de Tribo.Common.DAO.SqlServerFactory
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Tribo.Common.DAO.SqlServerFactory.GetCommand">
+	<summary>
+ Cria um objeto de comando para o banco de dados SQL Server.
+ </summary>
+	<returns>O objeto de comando do tipo SqlCommand.</returns>
+</member><member name="M:Tribo.Common.DAO.SqlServerFactory.GetConnection">
+	<summary>
+ Cria um objeto de conexão ao banco de dados SQL Server
+ </summary>
+	<returns>O objeto de conexão do tipo SqlConnection.</returns>
+</member><member name="M:Tribo.Common.DAO.SqlServerFactory.GetParameter">
+	<summary>
+ Cria um parâmetro de comando do banco de dados SQL Server.
+ </summary>
+	<returns>O objeto de parâmetro do tipo SqlParameter.</returns>
+</member>
+</members>
+</doc>

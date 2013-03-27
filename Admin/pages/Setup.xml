@@ -1,0 +1,15 @@
+<setup>
+	<dataSources dataBase="Sql" typeNameFormatString="PayPal.MST.Model.DSTableAdapters.{0}TableAdapter" dataTableFormatString="PayPal.MST.Model.DS+{0}DataTable" assembly="PayPal.MST.Model" selectAll="GetData" selectById="GetDataById">
+		<dataSource id="Configuracao" typeName="Configuracao" dataTable="Configuracao" dataValueField="Id" dataTextField="Codigo" />
+		<dataSource id="Usuario" typeName="Usuario" dataTable="Usuario" dataValueField="Id" dataTextField="Nome"  />
+		<dataSource id="StatusAprovacao" dataValueField="value" dataTextField="text">
+			<items>
+				<item text="Pendente de Aprovação" value="0"></item>
+				<item text="Aprovado" value="1"></item>
+				<item text="Reprovado" value="2"></item>
+			</items>
+		</dataSource>
+	</dataSources>
+	<layout />
+	<loginSystem captcha="0" active="1" />
+</setup>

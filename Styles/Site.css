@@ -1,0 +1,191 @@
+﻿*{list-style-type:none;text-decoration:none;border:0;font-smooth:always;margin:0;padding:0}
+a{-moz-transition:all .3s linear;-webkit-transition:all .3s linear;-o-transition:all .3s linear;transition:all .3s linear}
+body{font-family:Georgia, Times New Roman, Serif}
+header div{position:relative;height:184px;width:990px;background:url(../img/bg_menu.png) no-repeat left bottom;margin:0 auto}
+header{width:100%;height:184px;display:block;background:url(../img/bg_top_repeat.png) repeat}
+header h1 a{width:269px;height:184px;display:block;text-indent:-999999px;overflow:hidden;float:left;background:url(../img/logo_movimento.png) no-repeat left top}
+header h2{width:680px;color:#FFF;font-size:18px;font-weight:400;font-style:italic;float:left;padding-top:50px;position:relative;padding-left:35px;-moz-opacity:0.95;-webkit-opacity:0.95;-o-opacity:0.95;filter:alpha(opacity=95);opacity:0.95}
+header h2 span{width:28px;height:20px;display:block;position:absolute;text-indent:-999999px;overflow:hidden;background-repeat:no-repeat;background-image:url(../img/aspas.png)}
+header h2 span.asleft{background-position:0 0;left:5px;top:42px}
+header h2 span.asright{background-position:-40px 0;right:126px;bottom:-5px}
+div.wrapper{width:100%;background:#fff url(../img/bg_content.jpg) repeat-x bottom}
+section.main{width:990px;display:table;margin:0 auto}
+nav{width:710px;height:34px;display:block;clear:both;float:left;left:215px;bottom:0;position:absolute}
+nav ul li a{height:34px;display:block;background-image:url(../img/menu.png);background-repeat:no-repeat;text-indent:-9999999px;overflow:hidden}
+
+nav ul li a.bmanifesto{width:135px;background-position:20px 5px}
+nav ul li a.bmanifesto:hover,nav ul li a.bmanifesto.active{background-position:20px -34px}
+nav ul li a.bdepoimento{width:152px;background-position:-109px 5px}
+nav ul li a.bdepoimento:hover,nav ul li a.bdepoimento.active{background-position:-109px -34px}
+nav ul li a.bconcurso{width:220px;background-position:-262px 5px}
+nav ul li a.bconcurso:hover,nav ul li a.bconcurso.active{background-position:-262px -34px}
+
+.col_lft{width:560px;float:left;padding:19px 20px}
+.col_lft h2{color:#818181;font-size:14px;font-style:italic;font-weight:400;line-height:18px;margin-bottom:25px}
+.col_lft .video_home{margin-bottom:10px}
+.ptvideo { padding-top:56px;}
+
+.col_lft .video_home div.openinit{display:block}
+.col_lft .video_home div{display:none}
+.col_lft .video_home div span a{position:relative;bottom:-11px}
+
+.col_lft p{font-size:16px;font-style:italic;color:#767676;padding-bottom:25px;line-height:18px}
+.col_lft p strong{color:#ff4800}
+.col_lft hr{height:40px;background:url(../img/ball.png) repeat-x 0 7px}
+.col_lft span a{width:107px;height:26px;display:block;float:left;text-indent:-99999px;overflow:hidden;background:url(../img/sprite_btns.png) no-repeat 0 0}
+.col_lft span a.btn_assista{width:301px;height:46px;display:block;background:url(../img/sprite_btns.png) no-repeat 0 -132px;margin-left:112px;margin-bottom:30px}
+.col_lft h2.tit_manifesto{width:150px;height:20px;display:block;overflow:hidden;margin-top:10px;text-indent:-999999px;background:url(../img/titulos.png) no-repeat -2px -104px}
+.col_lft h2.tit_depoimentos{width:185px;height:20px;display:block;overflow:hidden;margin-top:10px;text-indent:-999999px;background:url(../img/titulos.png) no-repeat -2px -74px}
+.col_lft .share_btn{width:78px;height:29px;display:block;float:left}
+
+.share_btn ul li{float:right;margin-right:4px}
+.share_btn ul li a{width:29px;height:29px;display:block;text-indent:-99999px;overflow:hidden;background-repeat:no-repeat;background-image:url(../img/sprite_btns.png)}
+.share_btn ul li a.btfb{background-position:-119px 0}
+.share_btn ul li a.bttw{background-position:-150px 0}
+
+.col_lft.momento2{padding-top:30px;height:582px;display:block}
+.col_lft.momento2.bgmomento { background:url(../img/bg_merchan_mom2.png) no-repeat center bottom; }
+
+.conteudo_momento h2,.conteudo_momento h3,.conteudo_momento div.descricao{width:1px;height:1px;display:block;overflow:hidden;text-indent:-999999px;position:absolute}
+.conteudo_momento span{width:137px;height:36px;display:block;text-indent:-99999px;overflow:hidden;margin:315px auto 0}
+.conteudo_momento span a{background-image:none;width:145px;height:45px}
+
+.col_rgt{width:350px;float:left;position:relative;padding:25px 20px}
+.col_rgt h2.tit_videos{color:#818181;font-size:12px;font-style:italic;font-weight:400;line-height:18px;margin-bottom:25px;padding-left:10px}
+.col_rgt.placahome{background:url(../img/placa_poster.png) no-repeat 40px bottom;height:594px}
+.col_rgt.destaquemomento3{background:url(../img/bg_merchan_mom3.png) no-repeat 40px bottom;height:594px}
+
+.box_momento3 h2,.box_momento3 h3,.box_momento3 div.descricao{width:1px;height:1px;display:block;text-indent:-999999px;position:absolute;overflow:hidden}
+.box_momento3 span a{width:110px;height:35px;display:block;overflow:hidden;text-indent:-999999px;margin-top:450px;margin-left:145px}
+
+.col_rgt .box_destaque p a{width:160px;height:60px;display:block;text-indent:-999999px;overflow:hidden;position:absolute;top:365px;left:120px}
+
+.content_interna{width:950px;float:left;display:table;padding:19px 20px 19px;}
+.content_interna #video_interna{display:block;width:690px;height:412px;margin:0 auto 20px}
+.content_interna #more_videos{float:left;margin-left:20px}
+.box_listadevideos{padding-top:54px;margin-left:10px}
+
+.nomgtop{padding-top:0!important}
+.box_listadevideos ul{margin-bottom:25px;display:table; float:left;}
+.box_listadevideos ul li{width:160px;height:162px;display:block;float:left;background:#ff4800;margin-right:8px;margin-bottom:8px;text-align:center;cursor:pointer}
+.box_listadevideos ul li.bgnone{background:transparent;}
+
+.box_listadevideos ul li a{color:#fff;font-size:12px;font-style:italic;font-weight:700}
+.box_listadevideos ul li a.video1{width:160px; height:118px; display:block; background-image:url("../img/thumb_depoimentos_video-1.jpg"); text-indent:-999999px; overflow:hidden;}
+.box_listadevideos ul li.fdazul a.video1{background-position:left bottom;}
+.box_listadevideos ul li a.video2{width:160px; height:118px; display:block; background-image:url("../img/thumb_depoimentos_video-2.jpg"); text-indent:-999999px; overflow:hidden;}
+.box_listadevideos ul li.fdazul a.video2{background-position:left bottom;}
+.box_listadevideos ul li a.video3{width:160px; height:118px; display:block; background-image:url("../img/thumb_depoimentos_video-3.jpg"); text-indent:-999999px; overflow:hidden;}
+.box_listadevideos ul li.fdazul a.video3{background-position:left bottom;}
+.box_listadevideos div.breve {width: 160px;
+height: 162px;
+display: block;
+float: left;
+margin-right: 8px;
+margin-bottom: 8px;
+position: absolute;
+top: 249px;
+left: 198px;
+background:#949494;
+}
+
+.box_listadevideos div.breve2 {width: 160px;
+height: 163px;
+display: block;
+float: left;
+margin-right: 8px;
+margin-bottom: 8px;
+position: absolute;
+top: 255px;
+left: 198px;
+background:#949494;
+}
+
+.col_rgt .box_destaque_interna{width:368px;height:144px;display:block;position:relative;background:url(../img/movimento-sem-tablet.jpg) no-repeat 0 0;clear:both;margin-left:-10px;margin-top:10px}
+.col_rgt .box_destaque_interna p a{width:160px;height:40px;display:block;text-indent:-999999px;overflow:hidden;position:absolute;top:95px;left:103px}
+
+.content_interna h3.subtit_concurso{font-size:18px;color:#818181;font-style:italic;text-align:center;font-weight:400;clear:both;padding-bottom:20px;margin-top:5px;margin-bottom:10px;background:url(../img/bg_line.png) no-repeat center bottom}
+.content_interna h2.tit_concurso{width:260px;height:30px;display:block;float:left;text-indent:-99999px;overflow:hidden;background:url(../img/titulos.png) no-repeat 0 -37px;margin-right:20px;margin-left:162px}
+.content_interna ul#list_concurso{height:40px;display:block;float:left;margin-bottom:10px}
+.content_interna ul#list_concurso li{float:left;margin-right:20px}
+.content_interna ul#list_concurso li a{width:150px;height:38px;display:block;font-size:11px;color:#535353;font-style:italic;font-weight:700;text-align:center;background:url(../img/bg_btn.png);-webkit-border-radius:6px;-moz-border-radius:6px;-o-border-radius:6px;border-radius:6px;line-height:36px;text-transform:uppercase}
+.content_interna ul#list_concurso li a:hover{color:#fff}
+.content_interna .participar{width:370px;margin:0 auto}
+.content_interna .participar ul li.p_check{color:#2a302a;font-size:14px;font-weight:700;font-style:italic;width:196px;float:left;height:30px;padding-left:90px}
+.content_interna .participar ul li.p_check-2{color:#2a302a;font-size:14px;font-weight:700;font-style:italic;float:left;height:45px}
+.content_interna .participar ul li input[type=checkbox]{margin-right:5px}
+.content_interna .participar ul li.p_max{font-size:14px;font-style:italic;height:30px;text-align:center;color:#818181;font-weight:700}
+.content_interna .participar ul li.flshare{margin-right:8px;float:left}
+.content_interna .participar ul li a.btn_voltar{width:136px;height:46px;display:block;float:left;clear:left;margin-right:5px;background:url(../img/sprite_btns.png) no-repeat -191px -33px;text-indent:-99999px;overflow:hidden}
+
+.concurso{position:relative;padding-bottom:20px;background:url(../img/poster_pontilhado.jpg) no-repeat scroll 0 0 transparent;width:373px;height:450px;-o-box-shadow:6px 6px 30px 0 #CECECE;-moz-box-shadow:6px 6px 30px 0 #CECECE;-webkit-box-shadow:6px 6px 30px 0 #CECECE;box-shadow:6px 6px 30px 0 #CECECE;margin:0 auto 10px}
+.concurso fieldset{position:absolute;width:235px;height:235px;margin-top:123px;margin-left:70px;border:0}
+.concurso fieldset .btEnviar{position:absolute;margin-top:117px;margin-left:50px;border:0}
+.concurso fieldset .btPreview{position:absolute;margin-top:117px;margin-left:150px;border:0}
+.concurso fieldset .texto{width:235px;height:230px;background:transparent;line-height:22px;border:0;text-align:center;font-size:26px;font-family:Arial Black, Arial, Sans-Serif;resize:none;color:#FFF;overflow-y:auto;overflow-x:hidden;outline:none}
+.concurso .imgpreview{float:left;position:relative;top:0;left:420px;width:373px;height:471px}
+
+.cartaz image{float:left;width:373px;height:471px}
+
+.concurso img.gde_vencedor{position:absolute;bottom:40px;right:-160px}
+
+.content_interna .form_cadastro{width:500px;margin:0 auto}
+.content_interna .form_cadastro ul li{width:100%;height:80px}
+.content_interna .form_cadastro ul li label{color:#fff;font-weight:700;font-style:italic;font-size:18px;clear:both;display:block;margin-bottom:6px;-webkit-text-shadow:#272e31 1px 1px;-moz-text-shadow:#272e31 1px 1px;-o-text-shadow:#272e31 1px 1px;text-shadow:#272e31 1px 1px}
+.content_interna .form_cadastro ul li input[type=text]{width:462px;height:30px;display:block;font-family:Georgia, Times New Roman, Serif;font-style:italic;border:1px solid #c0c1c1;padding:5px}
+.content_interna .form_cadastro ul li.envia_form span{width:100%;display:block;font-weight:700;font-style:italic;color:#2f2f2f;font-size:14px;margin-bottom:10px}
+
+div.foo-wrapper{width:100%;background:#008ec7 url(../img/bg_foo.png) no-repeat center bottom;border-bottom:4px solid #fc481e;margin-top:0px}
+
+footer{width:990px;height:160px;padding-top:12px;display:block;clear:both;color:#fff;margin:0 auto}
+footer .foo_concurso{width:530px;padding-left:70px;float:left;height:160px}
+footer .foo_concurso h2{width:174px;height:15px;display:block;overflow:hidden;text-indent:-999999px;margin-bottom:10px;margin-top:24px;background-image:url(../img/titulos.png);background-repeat:no-repeat}
+footer .foo_concurso h2.tdepoimentos{background-position:-2px -22px}
+footer .foo_concurso h2.tconcurso{background-position:-2px 0}
+footer .foo_concurso p{font-size:12px;line-height:16px;margin-bottom:10px}
+footer .foo_concurso p.ftaz strong{color:#8ff3ff}
+footer .foo_concurso p a{width:109px;height:28px;display:block;overflow:hidden;text-indent:-999999px;background:url(../img/sprite_btns.png) no-repeat -185px 0;margin-top:16px}
+footer .foo_paypal{width:352px;float:left;padding-left:18px;padding-top:15px}
+footer .foo_paypal h2{width:110px;height:32px;float:left;padding-top:8px}
+footer .foo_paypal h2.logopf{clear:both;}
+
+footer .foo_paypal ul li{list-style-type:disc;list-style-position:inside}
+footer .foo_paypal ul li a{font-size:11px;color:#fff;text-decoration:underline;font-style:italic}
+footer .foo_paypal ul li a:hover{color:#fc481e}
+footer .foo_paypal img.foo_ny{margin-top:-19px}
+footer .foo_paypal address{font-size:11px;margin-top:70px;}
+
+#mask{position:absolute;z-index:9000;background-color:#000;display:none;top:0;left:0}
+.window{position:absolute;display:none;z-index:9999}
+
+.content_interna #regulamento,#modal_paypal{margin-top:10px;width:700px;background:url(../img/bg_modal.png) repeat-y;font-style:italic;padding:40px}
+.content_interna #premiacao{background:#fff;padding:25px}
+.content_interna #premiacao h2{width:300px;height:30px;display:block;clear:both;text-indent:-99999px;overflow:hidden;background:url(../img/titulos.png) no-repeat 0 -128px}
+
+.box_cont_modal{width:638px;background:#fff;padding:25px}
+.box_cont_modal div.content_regulamento { width:638px; height:450px; overflow-x:hidden; overflow-y:auto;}
+.box_cont_modal div.content_regulamento h2 {margin-bottom:10px; margin-top:5px;}
+.box_cont_modal div.content_regulamento p {margin-bottom:5px; padding-left:15px; padding-right:5px;}
+
+.content_interna #regulamento .box_cont_modal h2,#modal_paypal .box_cont_modal h2{color:#494949;font-size:16px;font-weight:700;width:100%}
+
+.box_cont_modal h2.tit_modal_regulamento{text-align:center;}
+.box_cont_modal p{color:#818181;font-size:16px;padding-bottom:15px}
+.box_cont_modal p a{color:#818181;text-decoration:underline;font-weight:700}
+.box_cont_modal p a.criesuaconta{width:242px;height:37px;display:block;text-indent:-99999px;overflow:hidden;background:url(../img/bt_criesuaconta.png) no-repeat left top}
+.box_cont_modal hr{width:100%;height:1px;display:block;border-top:1px solid #cecece;margin:15px auto}
+.box_cont_modal .destaque_modal{width:586px;background:#dfe1e0;padding:25px}
+
+.h_modal{padding:10px 25px 40px}
+.h_modal h2{width:110px;height:32px;float:left}
+.h_modal ul{float:right}
+.h_modal ul li{list-style-type:disc;list-style-position:inside;float:left;margin-left:15px}
+.h_modal ul li a{font-size:14px;color:#010000;text-decoration:underline;font-style:italic}
+
+.close{display:block;position:absolute;top:-27px;right:0;color:#fff;font-family:Arial, sans-serif;text-align:center;width:27px;font-size:16px;font-weight:700;height:27px;line-height:24px;background:#FE4600;font-style:normal}
+
+nav ul li,.content_interna #banner_interna,#MainContent_lkCompartilhar{float:left}
+.col_rgt .box_destaque h3,.col_rgt .box_destaque_interna h3{width:1px;height:1px;display:block;text-indent:-999999px;position:absolute;overflow:hidden;top:0;left:0}
+.box_listadevideos ul li.fdazul,.box_listadevideos ul li.over,.box_listadevideos ul li:hover{background:#279fcd;}
+.content_interna .participar ul li.p_btn,.content_interna .form_cadastro ul li.envia_form{text-align:center}
+.box_cont_modal p a:hover,.h_modal ul li a:hover{text-decoration:none}

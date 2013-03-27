@@ -1,0 +1,16 @@
+<page title="" subTitle="Usuários" dataSource="Usuario" visible="1" >
+    <fields>
+        <field name="Id" header="Id" form="0" list="0" />
+		<field name="IdFacebook" header="IdFacebook" form="0" list="1" />
+		<field name="Nome" header="Nome" form="1" list="1" />
+		<field name="Email" header="Email" form="1" list="0" />
+		<field name="CPF" header="CPF" form="1" list="0" />
+		<field name="Telefone" header="Telefone" form="1" list="0" />
+		<field name="Frase" header="Frase" form="1" list="1" control="textArea" />
+		<field name="ImagemGerada" header="Imagem" form="1" list="0" />
+		<field name="Status" header="Status" form="1" list="0" dataSource="StatusAprovacao" />
+		<field name="DataCadastro" header="Data de Cadastro" form="1" list="0" />
+	</fields>
+	<!--<action type="PayPal.MST.Site.Admin.Utils, PayPal.MST.Site" method="AdicionaLinkImagem" event="Selected" parameter="this" />-->
+	<ordination orderField="Ordem" displayFields="Descricao" />
+</page>
